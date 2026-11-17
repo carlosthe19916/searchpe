@@ -46,7 +46,7 @@ jobs:
     needs: build
     steps:
       - name: Azure Login
-        uses: azure/login@v1
+        uses: azure/login@v3
         with:
           creds: ${{ secrets.SEARCHPE_AZURE_CREDENTIALS }}
       - name: Deploy to containerapp
