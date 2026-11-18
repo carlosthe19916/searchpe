@@ -15,7 +15,7 @@ jobs:
     name: Test real padron reducido
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
       - uses: actions/setup-java@v3
         with:
           java-version: 17
@@ -29,7 +29,7 @@ jobs:
     name: Application container
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
       - uses: actions/setup-java@v3
         with:
           java-version: 17
@@ -59,7 +59,7 @@ jobs:
     name: Operator container
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
       - uses: actions/setup-java@v3
         with:
           java-version: 17
